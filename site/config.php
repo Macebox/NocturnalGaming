@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 /**
  * If the framework hasn't been installed yet, set to false.
  */
-$mvc->config['installed'] = false;
+$mvc->config['installed'] = true;
 
 /**
  * The current timezone of the system.
@@ -35,7 +35,7 @@ $mvc->config['language'] = 'en';
  */
 $mvc->config['controllers'] = array(
 	'index' => array(
-		'enabled' => true,
+		'enabled' => false,
 		'class' => 'CCIndex',
 		),
 	'me' => array(
@@ -87,6 +87,10 @@ $mvc->config['controllers'] = array(
  * 	url				= The url it uses.
  */
 $mvc->config['routing'] = array(
+	'index' => array(
+		'enabled' => true,
+		'url' => 'me',
+		),
 	);
 
 
@@ -120,13 +124,13 @@ $mvc->config['theme'] = array(
 		'footer',
 		),
 	'data' => array(
-		'header' => 'Nocturnal',
-		'slogan' => 'Här jobbas det..',
+		'header' => 'NGaming',
+		'slogan' => 'The killer clan',
 		'favicon' => '/img/trollface.jpg',
 		'logo' => '/img/trollface.jpg',
 		'logo_width' => 80,
 		'logo_height' => 80,
-		'footer' => '&copy;Nocturnal by Marcus Olsson',
+		'footer' => '&copy;NocturnalGaming by Marcus Olsson',
 		),
 	'themes' => array(
 		'core' => array(
@@ -162,7 +166,7 @@ $mvc->config['base_url'] = '';
  * 	1				= clean: controller/method/arg1/arg2/arg3
  * 	2				= q-string: index.php?q=controller/method/arg1/arg2/arg3
  */
-$mvc->config['url_type'] = 2;
+$mvc->config['url_type'] = 1;
 
 /**
  * Database settings
@@ -179,10 +183,10 @@ $mvc->config['url_type'] = 2;
 $mvc->config['database'] = array(
 	'active' => true,
 	'dsn' => '',
-	'host' => '',
-	'user' => '',
-	'password' => '',
-	'db' => '',
+	'host' => 'localhost',
+	'user' => 'root',
+	'password' => 'B1NXjw4c',
+	'db' => 'ngaming',
 	'dbDriver' => 'Mysqli',
 	'drivers' => array(
 		'Mysqli',
@@ -229,7 +233,7 @@ $mvc->config['navbar'] = array(
 /**
  * The session-variables
  */
-$mvc->config['session_key'] = 'Nocturnal';
+$mvc->config['session_key'] = 'NGaming';
 $mvc->config['session_name'] = 'localhost';
 
 /**
