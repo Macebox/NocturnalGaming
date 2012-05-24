@@ -38,9 +38,9 @@ $mvc->config['controllers'] = array(
 		'enabled' => false,
 		'class' => 'CCIndex',
 		),
-	'me' => array(
+	'news' => array(
 		'enabled' => true,
-		'class' => 'CCMe',
+		'class' => 'CCNewsfeed',
 		),
 	'guestbook' => array(
 		'enabled' => true,
@@ -89,7 +89,11 @@ $mvc->config['controllers'] = array(
 $mvc->config['routing'] = array(
 	'index' => array(
 		'enabled' => true,
-		'url' => 'me',
+		'url' => 'news',
+		),
+	'TEST1' => array(
+		'enabled' => true,
+		'url' => 'page/view/1',
 		),
 	);
 
@@ -104,8 +108,8 @@ $mvc->config['routing'] = array(
  * 	themes			= List of available themes.
  */
 $mvc->config['theme'] = array(
-	'path' => 'themes/grid',
-	'parent' => 'themes/grid',
+	'path' => '/site/themes/ngaming',
+	'parent' => '/themes/grid',
 	'template_file' => 'index.tpl.php',
 	'regions' => array(
 		'flash',
@@ -149,6 +153,12 @@ $mvc->config['theme'] = array(
 			'name' => 'grid',
 			'file' => 'index.tpl.php',
 			'path' => 'themes/grid',
+			'parent' => 'themes/grid',
+			),
+		'ngaming' => array(
+			'name' => 'ngaming',
+			'file' => 'index.tpl.php',
+			'path' => 'site/themes/ngaming',
 			'parent' => 'themes/grid',
 			),
 		),
@@ -211,9 +221,9 @@ $mvc->config['debug'] = array(
  * The content of the navbar.
  */
 $mvc->config['navbar'] = array(
-	'me' => array(
-		'text' => 'Me',
-		'url' => 'me',
+	'news' => array(
+		'text' => 'News',
+		'url' => 'news',
 		),
 	'guestbook' => array(
 		'text' => 'Guestbook',
@@ -279,6 +289,7 @@ $mvc->config['content'] = array(
 	'types' => array(
 		'page' => 'page',
 		'post' => 'post',
+		'news' => 'news',
 		),
 	'filter' => array(
 		'plain' => 'plain',
