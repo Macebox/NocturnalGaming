@@ -160,6 +160,8 @@ textarea {
   height:100px;
   min-height:100px;
   max-height:100px;
+  min-width:300px;
+  max-width:300px;
 }
 textarea:hover { border:1px solid #a04545; }
 .validation-message { font-size:10px; }

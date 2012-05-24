@@ -46,6 +46,10 @@ $mvc->config['controllers'] = array(
 		'enabled' => true,
 		'class' => 'CCGuestbook',
 		),
+	'source' => array(
+		'enabled' => true,
+		'class' => 'CCSource',
+		),
 	'blog' => array(
 		'enabled' => true,
 		'class' => 'CCBlog',
@@ -91,7 +95,7 @@ $mvc->config['routing'] = array(
 		'enabled' => true,
 		'url' => 'news',
 		),
-	'TEST1' => array(
+	'BBCode' => array(
 		'enabled' => true,
 		'url' => 'page/view/1',
 		),
@@ -140,25 +144,25 @@ $mvc->config['theme'] = array(
 		'core' => array(
 			'name' => 'core',
 			'file' => 'default.tpl.php',
-			'path' => 'themes/core',
+			'path' => '/themes/core',
 			'parent' => 'themes/core',
 			),
 		'metal' => array(
 			'name' => 'metal',
 			'file' => 'default.tpl.php',
-			'path' => 'themes/metal',
+			'path' => '/themes/metal',
 			'parent' => 'themes/metal',
 			),
 		'grid' => array(
 			'name' => 'grid',
 			'file' => 'index.tpl.php',
-			'path' => 'themes/grid',
+			'path' => '/themes/grid',
 			'parent' => 'themes/grid',
 			),
 		'ngaming' => array(
 			'name' => 'ngaming',
 			'file' => 'index.tpl.php',
-			'path' => 'site/themes/ngaming',
+			'path' => '/site/themes/ngaming',
 			'parent' => 'themes/grid',
 			),
 		),
@@ -236,6 +240,10 @@ $mvc->config['navbar'] = array(
 	'page' => array(
 		'text' => 'Pages',
 		'url' => 'page',
+		),
+	'source' => array(
+		'text' => 'Source',
+		'url' => 'source',
 		),
 	);
 
