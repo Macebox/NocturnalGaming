@@ -459,7 +459,12 @@ a:focus {
   font-size:12px;
   white-space:normal;
 }
-.code dt {
+.codeWindow code {
+  overflow:auto;
+  display:block;
+  height:230px;
+}
+.codeWindow dt {
   border-bottom:1px solid black;
   margin-bottom:5px;
   color:black;
