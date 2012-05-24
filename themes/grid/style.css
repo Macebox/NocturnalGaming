@@ -107,7 +107,6 @@ pre {
   white-space:pre;
 }
 pre, code, tt, .code { font:1em / 1.375 "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; }
-code { overflow:auto; }
 li ul, li ol { margin:0; }
 ul, ol {
   margin:0.6875em 1.5em 1.375em 0;
@@ -474,4 +473,5 @@ a:focus {
 .codeNumber { color:#378091; }
 .codeQuote { color:#45a120; }
 .codeComment { color:orange; }
-.codeFunction { color:black; }
+.codeKeyword { color:black; }
+.codeClassKeyword { color:magenta; }
