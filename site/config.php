@@ -34,29 +34,13 @@ $mvc->config['language'] = 'en';
  * 	class			= The class connected to the controller.
  */
 $mvc->config['controllers'] = array(
-	'index' => array(
-		'enabled' => false,
-		'class' => 'CCIndex',
-		),
-	'news' => array(
+	'acp' => array(
 		'enabled' => true,
-		'class' => 'CCNewsfeed',
-		),
-	'guestbook' => array(
-		'enabled' => true,
-		'class' => 'CCGuestbook',
-		),
-	'source' => array(
-		'enabled' => true,
-		'class' => 'CCSource',
+		'class' => 'CCAdminControlPanel',
 		),
 	'blog' => array(
 		'enabled' => true,
 		'class' => 'CCBlog',
-		),
-	'user' => array(
-		'enabled' => true,
-		'class' => 'CCUser',
 		),
 	'configure' => array(
 		'enabled' => true,
@@ -66,21 +50,45 @@ $mvc->config['controllers'] = array(
 		'enabled' => true,
 		'class' => 'CCContent',
 		),
-	'page' => array(
+	'guestbook' => array(
 		'enabled' => true,
-		'class' => 'CCPage',
+		'class' => 'CCGuestbook',
 		),
-	'theme' => array(
-		'enabled' => true,
-		'class' => 'CCTheme',
+	'index' => array(
+		'enabled' => false,
+		'class' => 'CCIndex',
+		),
+	'me' => array(
+		'enabled' => false,
+		'class' => 'CCMe',
 		),
 	'modules' => array(
 		'enabled' => true,
 		'class' => 'CCModules',
 		),
-	'acp' => array(
+	'news' => array(
 		'enabled' => true,
-		'class' => 'CCAdminControlPanel',
+		'class' => 'CCNewsfeed',
+		),
+	'page' => array(
+		'enabled' => true,
+		'class' => 'CCPage',
+		),
+	'prospects' => array(
+		'enabled' => true,
+		'class' => 'CCProspects',
+		),
+	'source' => array(
+		'enabled' => true,
+		'class' => 'CCSource',
+		),
+	'theme' => array(
+		'enabled' => true,
+		'class' => 'CCTheme',
+		),
+	'user' => array(
+		'enabled' => true,
+		'class' => 'CCUser',
 		),
 	);
 
@@ -112,8 +120,8 @@ $mvc->config['routing'] = array(
  * 	themes			= List of available themes.
  */
 $mvc->config['theme'] = array(
-	'path' => '/site/themes/ngaming',
-	'parent' => '/themes/grid',
+	'path' => '/site/themes/ngaming-red',
+	'parent' => 'themes/grid',
 	'template_file' => 'index.tpl.php',
 	'regions' => array(
 		'flash',
@@ -163,6 +171,12 @@ $mvc->config['theme'] = array(
 			'name' => 'ngaming',
 			'file' => 'index.tpl.php',
 			'path' => '/site/themes/ngaming',
+			'parent' => 'themes/grid',
+			),
+		'ngaming-red' => array(
+			'name' => 'ngaming-red',
+			'file' => 'index.tpl.php',
+			'path' => '/site/themes/ngaming-red',
 			'parent' => 'themes/grid',
 			),
 		),
@@ -229,10 +243,6 @@ $mvc->config['navbar'] = array(
 		'text' => 'News',
 		'url' => 'news',
 		),
-	'guestbook' => array(
-		'text' => 'Guestbook',
-		'url' => 'guestbook',
-		),
 	'blog' => array(
 		'text' => 'Blogg',
 		'url' => 'blog',
@@ -280,6 +290,10 @@ $mvc->config['CMUser-Groups'] = array(
 		'acronym' => 'user',
 		'name' => 'The User Group',
 		),
+	'prospect' => array(
+		'acronym'	=> 'prospect',
+		'name'		=> 'The Prospect Group',
+		),
 	);
 
 
@@ -297,7 +311,6 @@ $mvc->config['content'] = array(
 	'types' => array(
 		'page' => 'page',
 		'post' => 'post',
-		'news' => 'news',
 		),
 	'filter' => array(
 		'plain' => 'plain',
