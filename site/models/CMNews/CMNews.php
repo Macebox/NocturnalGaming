@@ -138,10 +138,11 @@ class CMNews extends CObject implements IModule, ArrayAccess
 		$ret[] = 1;
 		
 		$start = $page-2;
-		$end = $page+2;
 		
 		$start = ($page<3)?3:$start;
 		$start = ($page>($pages-3))?$pages-3:$start;
+		
+		$end = $page+2;
 		
 		for($i=$start;$i<=$end; $i++)
 		{
