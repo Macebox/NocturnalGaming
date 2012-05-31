@@ -213,7 +213,7 @@ $mvc->config['url_type'] = 2;
  * 			Mysqli
  */
 $mvc->config['database'] = array(
-	'active' => true,
+	'active' => false,
 	'dsn' => '',
 	'host' => '',
 	'user' => '',
@@ -231,7 +231,7 @@ $mvc->config['database'] = array(
  * 	false = don't show.
  * 	true = show.
  */
-$mvc->config['debugEnabled'] = true;
+$mvc->config['debugEnabled'] = false;
 $mvc->config['debug'] = array(
 	'mvc' => false,
 	'db-num-queries' => true,
@@ -333,3 +333,4 @@ $mvc->config['commentfiles'] = array(
 	'/config.comments.php',
 	'/site.config.comments.php',
 	);
+
