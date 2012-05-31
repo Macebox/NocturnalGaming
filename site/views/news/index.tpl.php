@@ -54,9 +54,9 @@ Category: <a href="<?=create_url("news/category/{$val['category']}")?>"><?=$val[
 </span>
 <span class="smaller-text">
 @<?=$val['created']?><br>
-<?=create_button("news/comment/{$val['id']}", '<img src="'.create_url('site/data/comment.gif').'" /> Comment')?> 
+<?=create_button("news/comment/{$val['id']}", '<img src="'.base_url('site/data/comment.gif').'" /> Comment')?> 
 <? if($user==$val['acronym'] || $admin): ?>
-<?=create_button("news/edit/{$val['id']}", '<img src="'.create_url('site/data/edit.gif').'" /> Edit')?> 
+<?=create_button("news/edit/{$val['id']}", '<img src="'.base_url('site/data/edit.gif').'" /> Edit')?> 
 <? endif; ?>
 </span>
 </p>

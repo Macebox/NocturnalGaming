@@ -8,7 +8,7 @@
 
 <h3>Install:</h3>
 
-<p>cd MVC; chmod 777 site/Data<br>
+<p>cd NocturnalGaming; chmod 777 site/Data<br>
 chmod 777 site/config.php<br>
 chmod 777 .htaccess</p>
 

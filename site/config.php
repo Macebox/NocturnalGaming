@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 /**
  * If the framework hasn't been installed yet, set to false.
  */
-$mvc->config['installed'] = true;
+$mvc->config['installed'] = false;
 
 /**
  * The current timezone of the system.

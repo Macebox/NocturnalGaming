@@ -63,9 +63,9 @@ class CMNews extends CObject implements IModule, ArrayAccess
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;', true);
 
 	$tmp2 = $this->database->RunQuery("INSERT INTO `news` (`id`, `title`, `content`, `category`, `tag`, `idUser`, `bbcode`, `created`, `deleted`) VALUES
-(1, 'Test', '[b]Yes we are using bbcode[/b] [i]HEJ :D[/i]            as sadasd ad aas ads adsa d dsa ads ads ads ads adsads  ads ads ads ads ads\r\n[code]<?php\r\n$abc = 123;\r\n$bcd = ''123'';[/code]', 'test', 'test,first,', 1, 1, '2012-05-28 22:10:05', NULL),
+(1, 'Test', '[b]Yes we are using bbcode[/b] [i]HEJ :D[/i]            as sadasd ad aas ads adsa d dsa ads ads ads ads adsads  ads ads ads ads ads\r\n[code]<?php\r\n\$abc = 123;\r\n\$bcd = ''123'';[/code]', 'test', 'test,first,', 1, 1, '2012-05-28 22:10:05', NULL),
 (2, 'Fillings', 'Yes this seems unnecessary, but i will do it anyway. Filling to show that news can be shown on several pages.', 'General', 'test, general', 1, 0, '2012-05-31 01:20:40', NULL),
-(3, 'Updating', '[b]This is[/b] [i]to show[/i] [u]that all[/u] [quote]kinds of[/quote] [code]$bbcode = 1;[/code] [size=40]works[/size] [color=blue], cool huh?[/color]', 'General', 'general, test', 1, 1, '2012-05-31 01:24:32', NULL),
+(3, 'Updating', '[b]This is[/b] [i]to show[/i] [u]that all[/u] [quote]kinds of[/quote] [code]\$bbcode = 1;[/code] [size=40]works[/size] [color=blue], cool huh?[/color]', 'General', 'general, test', 1, 1, '2012-05-31 01:24:32', NULL),
 (4, 'Another filler, just for fun', 'I hope you dont mind..', 'General', 'test', 1, 0, '2012-05-31 01:33:32', NULL),
 (5, 'Another news', 'This is not good, is it?', 'General', 'test', 1, 0, '2012-05-31 01:36:20', NULL),
 (6, 'The Killer Clan', 'The killer clan is a clan that kills. End of story.', 'NGaming', 'general, ngaming', 1, 0, '2012-05-31 01:43:49', NULL);",true);
