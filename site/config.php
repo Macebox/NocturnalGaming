@@ -55,7 +55,7 @@ $mvc->config['controllers'] = array(
 		'class' => 'CCGuestbook',
 		),
 	'index' => array(
-		'enabled' => false,
+		'enabled' => true,
 		'class' => 'CCIndex',
 		),
 	'me' => array(
