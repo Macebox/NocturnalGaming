@@ -1,0 +1,1 @@
+Admin:<br><span class="smaller-text"><a href="<?=create_url('ngaming/editstats/'.CNocturnal::Instance()->user['id'])?>">Edit stats</a><br><a href="<?=create_url('ngaming/addstats/')?>">Add stats</a><br></span>

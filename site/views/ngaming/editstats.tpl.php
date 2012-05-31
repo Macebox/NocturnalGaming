@@ -1,0 +1,1 @@
+<h2>Edit stats:</h2><?=$form?>

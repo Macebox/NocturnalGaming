@@ -1,0 +1,1 @@
+News per page:<br><?=create_button('news/SetNewsPerPage/2','2')?><?=create_button('news/SetNewsPerPage/5','5')?><?=create_button('news/SetNewsPerPage/10','10')?>

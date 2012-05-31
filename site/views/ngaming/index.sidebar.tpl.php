@@ -1,0 +1,1 @@
+<h3>About us</h3><p class="smaller">There actually are no us.. I'm forever alone in the gaming world, but that doesn't get me down!I play best alone, I suppose, although I've never played with anyone.. *forver alone*</p>

@@ -66,6 +66,10 @@ $mvc->config['controllers'] = array(
 		'enabled' => true,
 		'class' => 'CCModules',
 		),
+	'ngaming' => array(
+		'enabled' => true,
+		'class' => 'CCNGaming',
+		),
 	'news' => array(
 		'enabled' => true,
 		'class' => 'CCNewsfeed',
@@ -211,10 +215,10 @@ $mvc->config['url_type'] = 1;
 $mvc->config['database'] = array(
 	'active' => true,
 	'dsn' => '',
-	'host' => 'localhost',
-	'user' => 'root',
-	'password' => 'B1NXjw4c',
-	'db' => 'ngaming',
+	'host' => '',
+	'user' => '',
+	'password' => '',
+	'db' => '',
 	'dbDriver' => 'Mysqli',
 	'drivers' => array(
 		'Mysqli',
@@ -243,13 +247,13 @@ $mvc->config['navbar'] = array(
 		'text' => 'News',
 		'url' => 'news',
 		),
-	'blog' => array(
-		'text' => 'Blogg',
-		'url' => 'blog',
+	'prospects' => array(
+		'text' => 'Prospects',
+		'url' => 'prospects',
 		),
-	'page' => array(
-		'text' => 'Pages',
-		'url' => 'page',
+	'ngaming' => array(
+		'text' => 'Us',
+		'url' => 'ngaming',
 		),
 	'source' => array(
 		'text' => 'Source',
@@ -291,8 +295,8 @@ $mvc->config['CMUser-Groups'] = array(
 		'name' => 'The User Group',
 		),
 	'prospect' => array(
-		'acronym'	=> 'prospect',
-		'name'		=> 'The Prospect Group',
+		'acronym' => 'prospect',
+		'name' => 'The Prospect Group',
 		),
 	);
 
@@ -329,4 +333,3 @@ $mvc->config['commentfiles'] = array(
 	'/config.comments.php',
 	'/site.config.comments.php',
 	);
-
