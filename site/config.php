@@ -198,7 +198,7 @@ $mvc->config['base_url'] = '';
  * 	1				= clean: controller/method/arg1/arg2/arg3
  * 	2				= q-string: index.php?q=controller/method/arg1/arg2/arg3
  */
-$mvc->config['url_type'] = 1;
+$mvc->config['url_type'] = 2;
 
 /**
  * Database settings
