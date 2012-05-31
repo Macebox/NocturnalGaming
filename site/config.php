@@ -104,7 +104,7 @@ $mvc->config['controllers'] = array(
  */
 $mvc->config['routing'] = array(
 	'index' => array(
-		'enabled' => true,
+		'enabled' => false,
 		'url' => 'news',
 		),
 	'BBCode' => array(
